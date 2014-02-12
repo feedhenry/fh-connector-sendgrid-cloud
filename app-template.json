@@ -1,6 +1,7 @@
 {
   "name": "SendGrid Connector",
   "type": "cloud_nodejs",
+  "docs": "https://raw2.github.com/feedhenry/fh-connector-sendgrid-cloud/master/README.md",
   "repoUrl": "https://github.com/feedhenry/fh-connector-sendgrid-cloud.git",
   "repoBranch": "refs/heads/master",
   "image": "public/img/cloud_plugins/sendgrid.png",
