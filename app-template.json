@@ -1,4 +1,5 @@
 {
+  "id": "sendgrid-cloud",
   "name": "SendGrid Connector",
   "type": "cloud_nodejs",
   "docs": "https://raw2.github.com/feedhenry/fh-connector-sendgrid-cloud/master/README.md",
