@@ -17,8 +17,8 @@ Send an email
 + Request (application/json)
     + Body
         {
-          "to": "recipient"
-          "subject": "email subject"
+          "to": "recipient",
+          "subject": "email subject",
           "body": "message body"
         }
 
