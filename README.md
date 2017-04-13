@@ -1,30 +1,60 @@
-FORMAT: 1A
-
 # FeedHenry Sendgrid Connector
+
 [![Dependency Status](https://img.shields.io/david/feedhenry-templates/fh-connector-sendgrid-cloud.svg?style=flat-square)](https://david-dm.org/feedhenry-templates/fh-connector-sendgrid-cloud)
 
 The FeedHenry Sendgrid Connector. For more information on Sendgrid see: [https://github.com/sendgrid/sendgrid-nodejs](https://github.com/sendgrid/sendgrid-nodejs).
 
-# Group Sendgrid Connector API
+## Group Sendgrid Connector API
 
-# Sendgrid [/cloud/sendgrid]
-
-Send email
-
-## Sendgrid [POST] 
+# Send email
 
 Send an email
 
-+ Request (application/json)
-    + Body
-        {
-          "to": "recipient",
-          "subject": "email subject",
-          "body": "message body"
-        }
+|              |                 | 
+|--------------|-----------------|
+| Endpoint     | /cloud/sendgrid |
+| HTTP Method  | POST            |
 
-+ Response 200 (application/json)
-    + Body
-            {
-            }
+#### Request (application/json)
 
+##### Body
+
+```json
+{
+  "to": "recipient",
+  "subject": "email subject",
+  "body": "message body"
+}
+```
+
+#### Response 200 (application/json)
+
+##### Body
+
+```json
+{
+}
+```
+
+## Tests
+
+All the tests are in the "test/" directory. The cloud app is using mocha as the test runner. 
+
+### Unit tests
+
+```shell
+npm run serve
+npm run unit
+```
+
+or
+
+```shell
+npm run test
+```
+
+### Unit coverage
+
+```shell
+npm run coverage
+```
